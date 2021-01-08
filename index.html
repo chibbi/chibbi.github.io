@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="https://unpkg.com/@makenowjust/md.html@0.4.2"></script>
+  </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div class="markdown-body" id="markdownReadme">
+# test
+  </div>
+      <script>
+      var response = await fetch("https://raw.githubusercontent.com/chibbi/chibbi/main/README.md");
+
+      if (response.ok) { // if HTTP-status is 200-299
+        // get the response body (the method explained below)
+        let json = await response.json();
+        json += "TEST";
+        var readme = document.getElementById('divID');
+        readme.innerHTML += json;
+      } else {
+        alert("HTTP-Error: " + response.status);
+      }
+    </script>
 </body>
 </html>
