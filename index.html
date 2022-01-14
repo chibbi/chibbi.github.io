@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+
+<head>
+  <meta name=”robots” content="noindex, nofollow, noarchive" />
+</head>
+
+<style>
+  body {
+    background-color: #3b0404;
+  }
+  .verticalCenter {
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 98%;
+    width: 99%;
+  }
+
+  .table {
+    display: table-cell;
+    font-size: xxx-large;
+    flex-direction: row;
+    vertical-align: middle;
+    padding: 10%;
+  }
+
+  .table a {
+    display: block;
+    color: #3b0404;
+    text-decoration: none;
+  }
+
+  .table a:hover .cell {
+    background-color: #de847b;
+    text-decoration: none;
+  }
+
+  .cell {
+    padding: 1%;
+    margin-top: 1%;
+    background-color: #deb3ad;
+  }
+
+  #Header {
+    color: #ee8e85;
+    font-size: xx-large;
+    align-items: center;
+  }
+
+  #Header h1 {
+    margin-bottom: 0px;
+  }
+
+  #Header p {
+    margin-top: 0px;
+    font-size: large;
+  }
+</style>
+
 <body>
-  <p align="center" font size="10">
-    <a href="https://github.com/chibbi">My Github Profile</a><br>
-    <a href="/CountdownAbiturBW/">Countdown for Abitur 2021</a><br>
-    <a href="TowerBallTowerSaver/">a simple Help Website for the mobile game Towerball</a><br>
-  </p>
+  <div align="center" id="Header">
+    <h1>Hyperlinks across the Universe</h1>
+    <p>maintained by: chibbi</p>
+  </div>
+  <div class="verticalCenter">
+    <div class="table" align="center">
+      <a href="https://github.com/chibbi">
+        <div class="cell">
+          My Github Profile
+        </div>
+      </a>
+      <a href="/CountdownAbiturBW/">
+        <div class="cell">
+          Countdown for Stuff
+        </div>
+      </a>
+      <a href="TowerBallTowerSaver/">
+        <div class="cell">
+          a simple Help Website for the mobile game Towerball
+        </div>
+      </a>
+    </div>
+  </div>
 </body>
+
 </html>
